@@ -1,0 +1,11 @@
+ALTER TABLE usulan_warga_gambar
+DROP FOREIGN KEY fk_usulan_gambar;
+
+ALTER TABLE usulan_warga_gambar
+ADD CONSTRAINT fk_usulan_gambar
+FOREIGN KEY (usulan_warga_id)
+REFERENCES usulan_warga(id)
+ON DELETE CASCADE;
+
+DELETE FROM usulan_warga;
+ALTER TABLE usulan_warga AUTO_INCREMENT = 1;

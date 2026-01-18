@@ -1,0 +1,13 @@
+/dashboard-musrenbang
+│
+├── config/
+│   └── auth.php
+│
+├── login.php
+├── login_process.php
+├── logout.php
+│
+├── dashboard/
+│   └── index.php
+│
+└── index.php   (redirect ke login)
